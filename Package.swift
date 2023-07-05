@@ -10,7 +10,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "FrameworkDemo2",
+            name: "FrameworkDemo",
             targets: ["FrameworkDemo"])
     ],
     targets: [
