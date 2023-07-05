@@ -10,10 +10,13 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "FrameworkDemo",
+            name: "FrameworkDemo2",
             targets: ["FrameworkDemo"])
     ],
     targets: [
-        .binaryTarget(name: "FrameworkDemo", path: "./Sources/FrameworkDemo.xcframework")
+        .binaryTarget(name: "FrameworkDemo", path: "./Sources/FrameworkDemo.xcframework"),
+        .testTarget(
+            name: "FrameworkDemoTests",
+            dependencies: ["FrameworkDemo"]),
     ]
 )
